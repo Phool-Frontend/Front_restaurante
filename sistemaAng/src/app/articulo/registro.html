@@ -1,0 +1,83 @@
+<h1 mat-dialog-title>NUEVO ARTICULO registro.html</h1>
+<div mat-dialog-content>
+  <p>NOMBRE</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.nombre">
+  </mat-form-field>
+
+  <p>PRECIO</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.precio">
+  </mat-form-field>
+
+  <p>CONDICION</p>
+  <mat-radio-group  [(ngModel)]="data.condicion">
+    <mat-radio-button value="1">ACTIVO</mat-radio-button>
+    <mat-radio-button value="0">DESACTIVADO</mat-radio-button>
+  </mat-radio-group>
+
+  <!--<p>LLAVE FORANEA</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.idcategoria">
+  </mat-form-field>
+  -->
+  
+  <p>CATEGORIA</p>
+  <mat-form-field>
+    <mat-label>Seleccione categoría</mat-label>
+    <select matNativeControl required [(ngModel)]="data.idcategoria">
+      <option value="1">LicorChela</option>
+      <option value="2">Perecibles</option>
+      <option value="3">Cigarros</option>
+    </select>
+  </mat-form-field>
+
+
+
+
+
+    <h4>Basic mat-select</h4>
+    <mat-form-field>
+      <mat-label>Favorite food</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let food of foods" [value]="food.value">
+          {{food.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <h4>Basic native select</h4>
+    <mat-form-field>
+      <mat-label>Cars</mat-label>
+      <select matNativeControl required>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+    </mat-form-field>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Aceptar</button>
+</div>

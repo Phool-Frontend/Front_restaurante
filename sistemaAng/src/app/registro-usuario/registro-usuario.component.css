@@ -1,0 +1,66 @@
+.contenedor
+{
+    border:3px solid white;
+    margin: auto;
+    width: 25%;
+padding:20px;
+    
+}
+
+
+h2
+{
+    font-size: 30px;
+    color: aqua;
+    text-align: center;
+    
+}
+
+body
+{
+    background:black;
+font-family:arial;
+}
+
+
+
+
+label
+{
+font-size:12px;
+color:white;
+display:block;
+width:100%
+}
+
+input
+{
+margin-bottom:20px;
+width:100%;
+padding:10px;
+box-sizing:border-box;
+border:1px solid #ccc;
+}
+
+button
+{
+margin-bottom:0;
+background:#1668C4;
+color:#fff;
+margin-bottom:20px;
+width:100%;
+padding:10px;
+box-sizing:border-box;
+border:1px solid #ccc;
+}
+
+button:hover
+{
+background:rgba(20,177,217,1.00);
+cursor:pointer;	
+}
+
+#btn-1
+{
+margin-bottom:10px;
+}

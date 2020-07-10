@@ -1,0 +1,32 @@
+<div style="background-image: url(assets/dist/img/madera.png);height: 100vh;padding: 100px 0px;">
+
+
+    
+   
+    <div class="contenedor">
+            <div>
+                <h2 style="font-size:19px">REGISTRO USUARIO</h2>
+            <label>Nombre:</label>
+            <input type="text" [(ngModel)]="nombre" placeholder="Escribe tu nombre">
+            
+            <label>Correo:</label>
+            <input type="email" [(ngModel)]="correo"placeholder="Escribe tu correo">
+            
+
+            <label>Clave:</label>
+            <input id="clavel" type="password" [(ngModel)]="clave" placeholder="Escribe contraseña">
+             
+            <button id="btn-1"  (click)="registrar()" routerLink="/newuser" >Guardar</button>
+
+            <button id="btn-2"  routerLink="/login" >Iniciar Sesion</button>
+            
+            
+            
+        </div>
+    </div>  
+
+
+
+
+
+</div>

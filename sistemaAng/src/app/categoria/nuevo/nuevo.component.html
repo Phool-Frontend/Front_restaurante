@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>NUEVA CATEGORIA</h1>
+<div mat-dialog-content>
+  <p>NOMBRE</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.nombre">
+  </mat-form-field>
+
+  <p>CONDICION</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.condicion">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Aceptar</button>
+</div>

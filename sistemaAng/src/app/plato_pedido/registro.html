@@ -1,0 +1,21 @@
+<h1 mat-dialog-title>NUEVO ARTICULO registro.html</h1>
+<div mat-dialog-content>
+  <p>ID PLATO</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.idplato">
+  </mat-form-field>
+
+  <p>ID PEDIDO</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.idpedido">
+  </mat-form-field>
+
+
+  </div>
+
+
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Aceptar</button>
+</div>

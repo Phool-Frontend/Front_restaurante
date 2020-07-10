@@ -1,0 +1,22 @@
+
+
+<div style="background-image: url(assets/dist/img/madera.png);height: 100vh;padding: 100px 0px;">
+
+
+    
+    <div class="contenedor">
+                    <div class="llevame">
+                            <h2 style="font-size:19px">INICIAR SESIÓN</h2>
+                        <label>Usuario:</label>
+                        <input type="text" [(ngModel)]="usuario" placeholder="Escribe su correo">
+                        
+                        <label>Clave:</label>
+                        <input id="clavel" type="password"[(ngModel)]="clave" placeholder="Escribe contraseña">
+                                
+                        <button id="btn-1"  (click)="iniciarSesion()">Ingresar</button>
+                        <button id="btn-2"  routerLink="/newuser">Registrarse</button>
+                    </div>
+    </div>    
+
+
+</div>

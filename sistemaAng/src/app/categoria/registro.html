@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>NUEVA CATEGORIA</h1>
+<div mat-dialog-content>
+  <p>NOMBRE</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.nombre">
+  </mat-form-field>
+
+  <p>CONDICION</p>
+  <mat-radio-group  [(ngModel)]="data.condicion">
+    <mat-radio-button value="1">ACTIVO</mat-radio-button>
+    <mat-radio-button value="0">DESACTIVADO</mat-radio-button>
+  </mat-radio-group>
+  </div>
+
+
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Aceptar</button>
+</div>

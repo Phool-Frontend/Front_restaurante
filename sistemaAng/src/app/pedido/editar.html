@@ -1,0 +1,37 @@
+<h1 mat-dialog-title>Editando</h1>
+<div mat-dialog-content>
+  <p>NUMERO DE MESA</p>
+  <mat-form-field>
+    <input type="hidden"  [(ngModel)]="data.id">
+    <input matInput [(ngModel)]="data.numero_mesa">
+  </mat-form-field>
+
+  <p>TIPO PEDIDO</p>
+  <mat-form-field>
+    <input type="hidden"  [(ngModel)]="data.id">
+    <input matInput [(ngModel)]="data.tipo_pedido">
+  </mat-form-field>
+
+  <p>CONSUMO</p>
+  <mat-form-field>
+    <input type="hidden"  [(ngModel)]="data.id">
+    <input matInput [(ngModel)]="data.consumo">
+  </mat-form-field>
+  
+  <p>ID PERSONAL</p>
+  <mat-form-field>
+    <input type="hidden"  [(ngModel)]="data.id">
+    <input matInput [(ngModel)]="data.idpersonal">
+  </mat-form-field>
+
+  <p>ID  MEZA</p>
+  <mat-form-field>
+    <input type="hidden"  [(ngModel)]="data.id">
+    <input matInput [(ngModel)]="data.idmesa">
+  </mat-form-field>
+
+  
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Aceptar</button>
+</div>
